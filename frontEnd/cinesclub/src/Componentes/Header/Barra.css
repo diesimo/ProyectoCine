@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav{
+    margin:20px auto; /* 20px arriba y abajo, centrado horizontalmente */
+
+
+    top:-20px; /*Le damos una separación superior*/
+    position: absolute; /*Convertimos el contenedor en posición absoluta*/
+    left:0; /*Con left:0; y right:0; centramos el contenedor*/
+    right:0;
+ 
+  
+    max-width:1000px;
+    width:90%;
+}
+
+nav ul {
+
+    list-style: none; /*le quitamos los puntos a las listas */
+
+}
+
+/*Estilos aplicados solamente a los ul hijos */
+nav > ul 
+{
+    display:table; /*Nos permite asignar un comportamiento de tablas a los elementos*/
+    width: 100%;
+    background-color: #720505;
+    position: relative;
+     /* especifica como un elemtno es posicionado en el documento
+      realitve:Las propiedades top, right, bottom, y  left especifican el desplazamiento desde los bordes del bloque contenedor del elemento.*/
+
+}
+
+nav> ul li {
+
+
+    display:table-cell; /* los atributos trabajrian como una celda*/
+}
+
+/*Sub menu*/
+nav > ul> li:hover > ul{
+
+display: block;
+height: 100%;
+
+}
+
+
+nav> ul > li > ul {
+
+    display: block;
+    position: absolute;
+    background: #000;
+    left:0;
+    right: 0;
+    overflow: hidden;  /* propieda para especificar si se deber recortar el contenido 
+    y el hidde: el devortadmiento se recorta y el resto del contenido sera invisible*/
+    height: 0%;
+    
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    
+    
+    }
+
+
+
+    
+    nav > ul li a
+    {
+        color: #fff;
+        display: block; /* el elemento genera un cuadro de elemento de bloque*/
+        line-height: 30px; /*Especifica la altura en cajass de cada  linea*/
+        padding: 30px;
+        position: relative;
+        text-align: center; /* se utiliza para alinear el contenido interno de un elemento de bloque.*/
+        text-decoration: none;
+    
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    
+    }
+    nav > ul > li > ul > li a:hover /*:hoverselector se utiliza para seleccionar elementos cuando pasa el mouse sobre ellos.*/
+    {
+    
+        background: #720505;
+    
+    
+    }
+    
+    
+    nav> ul >li > a span {
+    
+    background: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -85px;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+     transition: all .3s ease;
+    
+    }
+
+    nav> ul >li > a span .icon { /*Acccediendo a la clase icon*/
+    
+    display: block;
+    line-height: 80px;
+
+    }
+
+    /*Para que el menu caiga*/
+
+    nav> ul > li > a:hover > span
+    {
+        top:0;
+
+
+    }
+
+    .faHome, .faFilm, .faPhone
+    {
+
+    color: #720505;
+
+    }

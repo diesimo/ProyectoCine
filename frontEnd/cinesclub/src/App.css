@@ -4,7 +4,7 @@ header{
     width: 100%;
     height: 150px; /*Le damos un alto fijo al menu*/
     overflow: hidden; /*Agregamos un overflow hidden para que no se muestren elementos que sobrepasen los 150px de alto*/
-    position: relative; /*Convertimos el menu en posición relativa porque mas adelante en el header > nav pondremos una posición absoluta*/
+    /*Convertimos el menu en posición relativa porque mas adelante en el header > nav pondremos una posición absoluta*/
 
 }
 

@@ -9,6 +9,7 @@ verify_ssl = true
 mysqlclient = "*"
 django = "*"
 djangorestframework = "*"
+django-multiselectfield = "*"
 
 [requires]
 python_version = "3.8"

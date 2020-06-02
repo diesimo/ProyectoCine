@@ -1,0 +1,32 @@
+ p{
+position: relative;
+   color: white;
+
+}
+
+.Main{
+
+    position: absolute;
+    margin-left: 192px;
+    margin-right: 192px;
+    width: 1536px;
+    height: 758px;
+    
+    background: #FFBA08;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.slider{
+
+    position: absolute;
+    margin-left: 300px;
+    width: 935px;
+    height: 366px;
+    
+ 
+
+
+}

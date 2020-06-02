@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f3)vu+c^4!)t=ylzo^$bujotfd5%js%&%6qretk^%u=z6-pp7a'
+SECRET_KEY = 'y34!-+_#@l1)h#43fkyf8#p2_*41$fp1s$#edfz$l@uwaxl3#x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'one',
-    'rest_framework',
+    'cine',
+   
 ]
 
 MIDDLEWARE = [
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'cinesclub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cine',
+        'NAME': 'cineproyecto',
         'USER':'root',
-        'PASSWORD':'chocolate',
-        'HOST':'localhost',
+        'PASSWORD': 'chocolate',
+        'HOST': 'localhost',
         'PORT':'3306',
     }
 }

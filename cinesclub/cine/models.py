@@ -17,8 +17,8 @@ class Pelicula(models.Model):
     idioma = models.CharField('Idioma',max_length=15)
     subtitulos = models.IntegerField('Subtitulos')
     clase = models.CharField('Clase',max_length=2)
-    namedire = models.CharField('Nombre del Director',db_column='nameDire', max_length=15, blank=True, null=True)  # Field name made lowercase.     
-    apelldire = models.CharField('Apellido del Director',db_column='apellDire', max_length=15, blank=True, null=True)  # Field name made lowercase.   
+    namedire = models.CharField('Nombre del Director',db_column='nameDire', max_length=15, blank=True)  # Field name made lowercase.     
+    apelldire = models.CharField('Apellido del Director',db_column='apellDire', max_length=15, blank=True)  # Field name made lowercase.   
     raking = models.IntegerField('Raking')
     categoria = models.CharField('Categoria',max_length=15)
 

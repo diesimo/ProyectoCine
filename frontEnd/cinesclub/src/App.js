@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './Componentes/Header/header.js';
-import Main from  './Componentes/Main/main.js';
+
+import Main from  './Componentes/Body/Body.js';
+import Formulario from './Componentes/Registro/registro.js'
 
 import './App.css';
 
@@ -10,16 +11,14 @@ function App() {
       <body className="cuerpo"> 
 
       <div>
-        
-        <Header></Header>
-        <Main></Main>
+      
+        {/*<Main></Main>*/}
+      
       </div>
 
-      
-         
         </body>
        
-      
+        <Formulario></Formulario>
 
 
       

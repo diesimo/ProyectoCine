@@ -12,13 +12,13 @@ function App() {
 
       <div>
       
-        {/*<Main></Main>*/}
+        <Main></Main>
       
       </div>
 
         </body>
        
-        <Formulario></Formulario>
+       
 
 
       

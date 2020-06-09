@@ -10,17 +10,35 @@ from multiselectfield import MultiSelectField
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Pelicula(models.Model):
+
+    Categoria=(
+        ('Terro','Terror'),
+        ('Romance','Romance'),
+        ('Comedia','Comedia'),
+        ('Suspenso','Suspenso'),
+        ('Aventura','Aventura'),
+        ('Accion','Accion'),
+        ('Drama','Drama'),
+        ('Musical','Musical'),
+        ('Ciencia Ficcion','Ciencia Ficcion'),
+        ('Fantasia','Fantasia'),
+        ('Documental','Documental'),
+    )
+
+
+
     idpelicula = models.AutoField('ID Pelicula',primary_key=True)
     titulo = models.CharField('Titulo',max_length=40)
     duracion = models.TimeField('Duracion')
     sinopsis = models.TextField('Sinopsis')
     idioma = models.CharField('Idioma',max_length=15)
-    subtitulos = models.IntegerField('Subtitulos')
+    subtitulos = models.BooleanField('Subtitulos')
     clase = models.CharField('Clase',max_length=2)
     namedire = models.CharField('Nombre del Director',db_column='nameDire', max_length=15, blank=True)  # Field name made lowercase.     
     apelldire = models.CharField('Apellido del Director',db_column='apellDire', max_length=15, blank=True)  # Field name made lowercase.   
-    raking = models.IntegerField('Raking')
-    categoria = models.CharField('Categoria',max_length=15)
+    raking = models.IntegerField('Raking',default=1, validators=[MaxValueValidator(7),MinValueValidator(1)] )
+    categoria = MultiSelectField('Categoria',max_length=97, blank=True,choices=Categoria )
+    imagen = models.ImageField('Imagen', db_column='imagen', upload_to='pelicula' )
 
     class Meta:
         managed = False

@@ -10,6 +10,8 @@ mysqlclient = "*"
 django = "*"
 djangorestframework = "*"
 django-multiselectfield = "*"
+django-cors-headers = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"

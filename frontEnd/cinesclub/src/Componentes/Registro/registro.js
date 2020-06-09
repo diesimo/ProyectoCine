@@ -1,49 +1,68 @@
-import React,{Fragment, useState} from 'react';
+import React from 'react';
 import './registro.css';
-import axios from 'axios';
+import Axios from 'axios';
 import { Component } from 'react';
 
-const Formulario =() => {
+class Formulario extends Component{
+state={
+    
 
-    const [datos,setDatos]=useState({
+   
+        fechaingreso:'',
+        passw:'',
+        identi:'',
+        telefono:'',
         nombre:'',
         apellido:'',
-        username:'',
-        password:'',
-        dateingreso:'',
-        telefono:'',
         cedula:'',
         email:'',
-        fechanaci:'',
+        fechnaci:'',
+    
 
 
-    })
-const handleInputChange=(event)=>{
 
-    setDatos({
-        ...datos,
-        [event.target.name] : event.target.value
-    })
+
+
 }
- const enviarDatos =(event)=> {
 
+enviarDatos = async(event)=> {
+    console.log(this.state)
     event.preventDefault();
-    console.log(this.datos)
-    axios.post('http://127.0.0.1:8000/usuarios/')
+   
+    const newUser = {
 
+        fechaingreso:this.state.fechaingreso,
+        passw:this.state.passw,
+        identi:this.state.identi,
+        telefono:this.state.telefono,
+        nombre:this.state.nombre,
+        apellido:this.state.apellido,
+        cedula:this.state.cedula,
+        email:this.state.email,
+        fechnaci:this.state.fechnaci,
+       
+    };
+    const res = await Axios.post('http://127.0.0.1:8000/usuarios/', newUser);
+        
+    console.log(res)
  }
 
- 
+ changeHanlder =(event) =>{
+    this.setState({[event.target.name]: event.target.value})
+
+}
+
+ render(){
 
 return(
-<Fragment>
+
 <div >
    <section className='registro'>
-       <form onSubmit={enviarDatos}>
+       <form onSubmit={this.enviarDatos}>
         <h4>Registro</h4>
 
         <input 
-            onChange={handleInputChange}
+            onChange={this.changeHanlder}
             name="nombre"
             className="controls"
             type="text"
@@ -54,7 +73,7 @@ return(
         </input>
 
         <input 
-            onChange={handleInputChange}
+            onChange={this.changeHanlder}
             name="apellido" 
             className="controls"
             type="text"
@@ -64,8 +83,8 @@ return(
           </input>
 
         <input 
-            onChange={handleInputChange}
-            name="username" 
+            onChange={this.changeHanlder}
+            name="identi" 
             className="controls" 
             type="text" 
             placeholder="User">
@@ -73,8 +92,8 @@ return(
         </input>
 
         <input 
-            onChange={handleInputChange}
-            name="password" 
+            onChange={this.changeHanlder}
+            name="passw" 
             className="controls"
             type="password"
             placeholder="contras">
@@ -82,15 +101,15 @@ return(
           </input>
 
           <input 
-            onChange={handleInputChange}
-            name="dateingreso" 
+            onChange={this.changeHanlder}
+            name="fechaingreso" 
             className="controls"
             type="date"
             placeholder="Fecha Ingreso">
 
           </input>
           <input 
-            onChange={handleInputChange}
+            onChange={this.changeHanlder}
             name="telefono" 
             className="controls"
             type="number"
@@ -99,7 +118,7 @@ return(
           </input>
 
           <input 
-            onChange={handleInputChange}
+            onChange={this.changeHanlder}
             name="cedula" 
             className="controls"
             type="number"
@@ -108,7 +127,7 @@ return(
           </input>
 
           <input 
-            onChange={handleInputChange}
+            onChange={this.changeHanlder}
             name="email" 
             className="controls"
             type="email"
@@ -117,8 +136,8 @@ return(
           </input>
 
           <input 
-            onChange={handleInputChange}
-            name="fechanaci" 
+            onChange={this.changeHanlder}
+            name="fechnaci" 
             className="controls"
             type="date"
             placeholder="Fecha de Nacimiento">
@@ -130,9 +149,10 @@ return(
    </section>
    
     </div>
-    </Fragment>
+    
 );
 
+}
 }
 
 export default Formulario;

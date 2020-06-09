@@ -1,0 +1,30 @@
+.info{
+
+    position: static;
+    margin:auto;
+    margin-top: 40px;
+    margin-left: 400px;
+    width: 666px;
+    height: 607px;
+    background: white;
+     color: #000000;
+
+}
+
+p{
+color:black;
+
+
+}
+
+.imagen{
+
+
+position: absolute;
+width: 376px;
+height: 659px;
+margin-top: 37px;
+margin-left: 59px;
+
+background: #C4C4C4;
+}

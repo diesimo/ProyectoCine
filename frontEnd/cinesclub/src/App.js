@@ -12,7 +12,7 @@ function App() {
 
       <div>
       
-        <Main></Main>
+        <Main ></Main>
       
       </div>
 

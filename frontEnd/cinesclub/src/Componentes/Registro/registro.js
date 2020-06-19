@@ -57,6 +57,7 @@ enviarDatos = async(event)=> {
 return(
 
 <div >
+  
    <section className='registro'>
        <form onSubmit={this.enviarDatos}>
         <h4>Registro</h4>

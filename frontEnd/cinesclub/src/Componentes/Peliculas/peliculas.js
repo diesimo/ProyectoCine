@@ -10,7 +10,7 @@ function Peliculas(props){
   
         <div className="Pelis">
 
-          <h1 className ="h">QLQ</h1>
+          <h1 className ="h"></h1>
          
         </div>
 

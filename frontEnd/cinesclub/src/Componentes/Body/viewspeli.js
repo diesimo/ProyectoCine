@@ -7,13 +7,16 @@ class viewspelis extends Component
 {
     state={
         peliculas:[],
+        
       
     
     }
 
     async componentDidMount()
     {
-        const res =await axios.get('http://127.0.0.1:8000/pelicula/');
+        const val= this.props.comedia
+        const res =await axios.get(val);
+        console.log(res.data);
         this.setState({peliculas: res.data});
         
         console.log(this.state.peliculas)
@@ -21,39 +24,61 @@ class viewspelis extends Component
 
     }
 
+    function (params) {
+        
+    }
+
 
 
     render()
     {
+      
     return(
-    
-    <div className='imagen' >
-
-        <div ></div>
-        <div className="info">
+        <div className="section">
        
-            {
-                this.state.peliculas.map(pelicula => <p>
-                <p>Titulo: {pelicula.titulo}</p>
-                <p>Duracion: {pelicula.duracion}</p>
-                <p>Sinopsis: {pelicula.sinopsis}</p>
-                <p>Idioma: {pelicula.idioma}</p>
-                <p>Susbtitulos: {pelicula.subtitulos}</p>
-                <p>Clase: {pelicula.clase}</p>
-                <p>Nombre del director: {pelicula.namedire}  {pelicula.apelldire}</p>
-                <p>Ranking: {pelicula.raking}</p>
-                <p>Categoria: {pelicula.categoria}</p>
+        { 
+            this.state.peliculas.map(pelicula =>
+            <div className="info-total">
+                <div className="info">
+                    <p><span className="negrilla ">Titulo:</span> {pelicula.titulo}</p>
+                    
+                    <p><span className="negrilla ">Duracion:</span> {pelicula.duracion}</p>
+                    
+                    <p><span className="negrilla ">Sinopsis:</span> {pelicula.sinopsis}</p>
+                    
+                    <p><span className="negrilla ">Idioma:</span> {pelicula.idioma}</p>
+                
+                    <p><span className="negrilla ">Susbtitulos: </span>{pelicula.subtitulos}</p>
+                    
+                    <p><span className="negrilla ">Clase: </span>{pelicula.clase}</p>
+                    
+                    <p><span className="negrilla ">Nombre del director:</span> {pelicula.namedire}  {pelicula.apelldire}</p>
+                    
+                    <p><span className="negrilla ">Ranking:</span> {pelicula.raking}</p>
+                    
+            <p ><span className="negrilla ">Categoria:</span> {pelicula.categoria.map(categoria => <div className="categoria"><p >{categoria}  </p>  </div>)}</p>
+                </div>
+                    <div className="imagenpeli">
+                        <img src={pelicula.imagen} ></img>
+                    </div>
+                    <hr></hr>
 
-                        <br></br>
-                    </p>
 
-                 )
+            </div>
            
-            }
-        
-        </div>
+               
 
+             )
+       
+          }
+    
     </div>
+  
+
+        
+      
+
+    
 
     )
 

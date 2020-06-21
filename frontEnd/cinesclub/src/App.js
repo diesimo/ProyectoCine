@@ -1,18 +1,21 @@
 import React from 'react';
 
-import Main from  './Componentes/Body/Body.js';
-import Formulario from './Componentes/Registro/registro.js'
-
+import Body from  './Componentes/Body/Body.js';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
+     
+       
+       
+     
       <body className="cuerpo"> 
-
+     
       <div>
       
-        <Main ></Main>
+      <Body></Body>
       
       </div>
 

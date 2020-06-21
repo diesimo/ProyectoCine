@@ -154,7 +154,8 @@ position: relative;
 
 .Main{
 
-    position: absolute;
+    position: relative;
+    margin-top: 200px;
     margin-left: 192px;
     margin-right: 192px;
     width: 1536px;
@@ -167,6 +168,10 @@ position: relative;
 
 }
 
+.Prueba{
+    color:red
+
+}
 
 
 

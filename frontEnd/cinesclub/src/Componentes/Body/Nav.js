@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import './Body.css';
 import {Link, withRouter} from 'react-router-dom';
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import  {faHome, faFilm, faPhone} from '@fortawesome/free-solid-svg-icons';
 
@@ -18,12 +17,12 @@ render()
    
  return(  
 
-<div className='cuerpo'> 
+<div > 
   
-  <div className="Barra">
+  <div className="Bodynav">
    
      
-        <nav> 
+        <nav > 
           
             <ul>
             <li><Link to="a"><span className=""><i className="icon"><FontAwesomeIcon className="faHome" icon={faHome}></FontAwesomeIcon></i></span>Home</Link></li>
@@ -35,6 +34,7 @@ render()
                             <li><Link to="/viewspelis/drama">Drama</Link></li>
                             <li><Link to="/viewspelis/accion">Accion</Link></li>
                             <li><Link to="/viewspelis/romance">Romance</Link></li>
+                            <li><Link to="/viewspelis/aventura">Aventura</Link></li>
                             
     
                         </ul>
@@ -49,7 +49,7 @@ render()
         </nav>
   
                    
-        </div>
+    </div>
 
   
 

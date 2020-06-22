@@ -2,7 +2,7 @@ import React from 'react';
 
 import Body from  './Componentes/Body/Body.js';
 import './App.css';
-
+import Admi from '../src/Componentes/Admi/Admi.js';
 
 function App() {
   return (
@@ -14,8 +14,9 @@ function App() {
       <body className="cuerpo"> 
      
       <div>
+     <Admi></Admi>
       
-      <Body></Body>
+      
       
       </div>
 

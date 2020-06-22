@@ -10,14 +10,14 @@
 
 
 
-p{
+.section p{
 
 padding: 5px;
 color:white;
 
 
 }
-div{
+.section div{
 float: left;
 
 }

@@ -9,7 +9,7 @@
 
 
 
-nav{
+.Bodynav> nav{
     margin:20px auto; /* 20px arriba y abajo, centrado horizontalmente */
 
 
@@ -23,14 +23,14 @@ nav{
     width:90%;
 }
 
-nav ul {
+.Bodynav> nav ul {
 
     list-style: none; /*le quitamos los puntos a las listas */
 
 }
 
 /*Estilos aplicados solamente a los ul hijos */
-nav > ul 
+.Bodynav> nav > ul 
 {
     display:table; /*Nos permite asignar un comportamiento de tablas a los elementos*/
     width: 100%;
@@ -41,14 +41,14 @@ nav > ul
 
 }
 
-nav> ul li {
+.Bodynav> nav> ul li {
 
 
     display:table-cell; /* los atributos trabajrian como una celda*/
 }
 
 /*Sub menu*/
-nav > ul> li:hover > ul{
+.Bodynav>  nav > ul> li:hover > ul{
 
 display: block;
 height: 100%;
@@ -56,7 +56,7 @@ height: 100%;
 }
 
 
-nav> ul > li > ul {
+.Bodynav>nav> ul > li > ul {
 
     display: block;
     position: absolute;
@@ -79,7 +79,7 @@ nav> ul > li > ul {
 
 
     
-    nav > ul li a
+.Bodynav>nav > ul li a
     {
         color: #fff;
         display: block; /* el elemento genera un cuadro de elemento de bloque*/
@@ -96,7 +96,7 @@ nav> ul > li > ul {
         transition: all .3s ease;
     
     }
-    nav > ul > li > ul > li a:hover /*:hoverselector se utiliza para seleccionar elementos cuando pasa el mouse sobre ellos.*/
+.Bodynav> nav > ul > li > ul > li a:hover /*:hoverselector se utiliza para seleccionar elementos cuando pasa el mouse sobre ellos.*/
     {
     
         background: #720505;
@@ -105,7 +105,7 @@ nav> ul > li > ul {
     }
     
     
-    nav> ul >li > a span {
+.Bodynav> nav> ul >li > a span {
     
     background: #fff;
     display: block;
@@ -123,7 +123,7 @@ nav> ul > li > ul {
     
     }
 
-    nav> ul >li > a span .icon { /*Acccediendo a la clase icon*/
+.Bodynav>nav> ul >li > a span .icon { /*Acccediendo a la clase icon*/
     
     display: block;
     line-height: 80px;
@@ -132,7 +132,7 @@ nav> ul > li > ul {
 
     /*Para que el menu caiga*/
 
-    nav> ul > li > a:hover > span
+.Bodynav>nav> ul > li > a:hover > span
     {
         top:0;
 
@@ -144,8 +144,9 @@ nav> ul > li > ul {
 
     color: #720505;
 
-    }
- p{
+}
+
+p{
 position: relative;
    color: white;
 

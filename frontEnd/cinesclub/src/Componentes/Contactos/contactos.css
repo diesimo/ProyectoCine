@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactos {
+  width: 550px;
+  height: 650px;
+  background-color: rgb(196, 92, 67);
+  margin: auto;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "calibri";
+  border-radius: 10px;
+}
+
+.titulo {
+  padding-left: 30%;
+  margin-bottom: 25px;
+}
+
+.telefonos {
+  margin-bottom: 20px;
+}
+
+h1 {
+  padding: 0;
+
+  margin-bottom: 20px;
+}
+
+img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-left: 10%;
+  background: rgb(196, 92, 67);
+}
+
+li {
+  list-style-type: disc;
+  display: list-item;
+  font-size: 20px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
+
+.email li {
+  list-style-type: circle;
+  margin-left: 120px;
+  font-size: 28px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+.email img {
+  width: 50px;
+}
+
+.redes img {
+  width: 35px;
+  height: 25px;
+}
+
+.redes li {
+  list-style-type: none;
+  margin-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.redes text {
+  margin-left: 5px;
+}
+
+.facebook img {
+  float: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.twitter img {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.instagram img {
+  margin: 0;
+  margin-bottom: 10px;
+}

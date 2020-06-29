@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'multiselectfield',
     'rest_framework',
     'corsheaders',
+    'django_filters'
     
    
 ]

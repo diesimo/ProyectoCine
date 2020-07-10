@@ -1,0 +1,16 @@
+.FacturaB{
+position: absolute;
+background: white;
+z-index:10;
+top:100px;
+left: 30px;
+color:black;
+padding: 30px;
+}
+
+.botomOpen{
+    position: absolute;
+    
+    
+
+}

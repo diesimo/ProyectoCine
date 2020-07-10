@@ -19,10 +19,6 @@ state={
         fechnaci:'',
     
 
-
-
-
-
 }
 
 enviarDatos = async(event)=> {

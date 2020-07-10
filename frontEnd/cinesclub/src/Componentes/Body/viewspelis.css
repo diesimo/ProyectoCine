@@ -12,7 +12,7 @@
 
 .section p{
 
-padding: 5px;
+margin: 5px;
 color:white;
 
 
@@ -55,7 +55,7 @@ float: left;
     padding: 0px;
 }
 
-img{
+.info-total img{
     
 margin: 10px;
 width: 300px;
@@ -64,7 +64,7 @@ border-radius: 10px;
 
 }
 
-hr{
+.info-total hr{
 margin-top: 30px;
 position: relative;
 width: 100%;
@@ -72,20 +72,26 @@ background: #FFBA08;
 height: 5px;
 
 }
-.categoria
-{ 
-    
-    float: right;
-    
-    
-    
-    
+
+
+
+#Categoria{
+    float:left;
+    margin-right: 10px;
 }
 
-.categoria>p{
-float: right;
-padding: 0px;
-margin-right: 5px;
-left: -530px;
+
+.Modall {
+position: absolute;
+margin-top:90px ;
+background:#FFBA08;
+color:black;
+width: 700px;
+margin-left:190px;
+
+justify-content: center;
+z-index: 2
 
 }
+
+

@@ -4,9 +4,19 @@
     list-style: none;
     text-decoration: none;
 }
-.nav{
-    height: 100%;
+.Prueba {
+width: 100%;
+height: 100%;
+background: yellow;
+
 }
+
+.nav{
+   position: absolute;
+   width: 250px;
+   height: 100%;
+}
+
 
 .administracion{
     font-size: 22px;
@@ -20,11 +30,12 @@
 
 
 .siderbar {
-    position: fixed;
+   
     left:0;
     width: 250px;
     height: 100%;
     background: #042331;
+    
 }
 .siderbar ul a{
     display: block;
@@ -50,12 +61,241 @@
 }
 
 .Blanco{
-    position: absolute;
-    margin-left:250px;
-    margin-top:100px;
-    height: 85%;
+   position: absolute;
+    margin-left: 250px;
+    width: 1670px ;
+    height: 997px;
     background-color: white;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+
+}
+/*Parte del administrador*/
+.regis{
+    
+    height: 100%;
     width: 100%;
+    
+    text-align: left;
+    justify-content: center;
+
+
+
+}
+.regis h4 {
+
+    text-align: center;
+    margin:10px;
+    font-size: 24px;
+
+}
+.input
+{
+    margin:auto
+
+}
+
+.input
+{
+    width: 35%;
+    background: #063146;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid black;
+    font-size: 18px;
+    color:white;
+   
+}
+.controlsP {
+
+    width: 50%;
+    background: black ;
+    color: white;
+    margin:10px;
+    font-size: 16px;
+    
+    
+    }
+.input #raking{
+
+width: 35px;
+
+}
+
+.input #clase {
+
+width: 50px;
+
+}
+
+.input #sinopsis {
+
+    height: 300px;
+    width: 500px;
+   
+    
+}
+
+.input #imagen {
+
+   background:#063146 ;
+   
+    
+    }
+
+
+.VistaPelis {
+
+position: relative;
+color: white;
+background:black;
+margin:150px auto;
+
+
+width: 100%;
+
+
+justify-content: center;
+
+
+
+
+}
+
+.VistaPelis table{
+
+width: 100%;
+text-align: left;
+border-collapse: collapse;
+
+
+}
+
+.VistaPelis th, td{
+
+border: solid 1px white;
+padding: 20px;
+text-align: center;
+
+}
+
+.VistaPelis thead{
+
+
+background-color: #063146;
+border-bottom: solid 5px darkgoldenrod;
+
+}
+
+
+.VistaPelis tr:nth-child(even){
+
+
+background: white;
+color:black
+
+}
+
+.VistaPelis img {
+
+    margin: 10px;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+
+}
+
+.tableVistaP button{
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    
+  
+
+}
+
+
+.RegisF{
+
+background: red;
+
+}
+
+.RegisF {
+
+    height: 100%;
+    width: 100%;
+    
+    
+   
+
+
+}
+
+.RegisF h4 {
+
+    text-align: center;
+    margin:10px;
+    font-size: 24px;
+    color:black
+
+}
+
+.Sede{
+
+background:green ;
+padding: 10px;
+
+}
+
+.Funcion{
+
+    background: greenyellow;
+    padding: 10px;
+}
+
+.Sala{
+    background: indigo;
+    padding: 10px;
+}
+
+
+.RegisP>p {
+    color:black;
+   
+}
+
+.Prove
+{
+    color:black;
+    background: red;
+   
+}
+
+.RegisP{
+    
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 800px;
+    margin-top:100px;
+    margin-left:400px;
+    padding: 20px;
+}
+
+.RegisP select{
+position: relative;
+margin-left: 20px;
+
 
 }
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './NavAdmi.js'
 import './Admi.css'
 import Axios from 'axios';
 class Agregar extends Component {
@@ -56,6 +55,7 @@ class Agregar extends Component {
     handleSubmit =  async (e) => {
         
         e.preventDefault();
+        console.log(this.state.categoria)
        
         let form_data = new FormData();
        
@@ -69,15 +69,17 @@ class Agregar extends Component {
         form_data.append('horas', this.state.horas);
         form_data.append('minutos', this.state.minutos);
         form_data.append('vista', this.state.vista);
-        form_data.append('formatos[]', this.state.formatos);
+        form_data.append('formatos[]', this.state.formatos[0]);
+        form_data.append('formatos[]', this.state.formatos[1]);
         form_data.append('apelldire', this.state.apelldire);
         form_data.append('categoria[]', this.state.categoria);
+       
         
         for (var value of form_data.values()) {
             console.log(value); 
          }
         let url = 'http://127.0.0.1:8000/list2/';
-      await Axios.post(url, form_data, {
+      const res = await Axios.post(url, form_data, {
           headers: {
             'content-type': 'multipart/form-data'
           }
@@ -87,6 +89,7 @@ class Agregar extends Component {
               
             })
             .catch(err => console.log(err))
+            
         
       };
    

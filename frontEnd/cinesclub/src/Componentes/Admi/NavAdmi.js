@@ -17,6 +17,7 @@ return(
                 <li><Link to="/admi/RegisF">Registrar Funcion</Link></li>
                 <li><Link to="/admi/RegisP">Registrar Productos</Link></li>
                 <li><Link to="/admi/Prove">Registrar Provedor</Link></li>
+                <li><Link to="/admi/GananciaMes">Ganancia del Mes</Link></li>
             </ul>
 
 

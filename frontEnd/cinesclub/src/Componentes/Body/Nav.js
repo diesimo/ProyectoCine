@@ -33,15 +33,25 @@ render()
                             <li><Link to="/body/viewspelis/terror">Terror</Link></li>
                             <li><Link to="/body/viewspelis/drama">Drama</Link></li>
                             <li><Link to="/body/viewspelis/accion">Accion</Link></li>
-                            <li><Link to="/body/viewspelis/romance">Romance</Link></li>
+                            <li><Link to="/body/viewspelis/romantica">Romance</Link></li>
                             <li><Link to="/body/viewspelis/aventura">Aventura</Link></li>
+                            <li><Link to="/body/viewspelis/suspenso">Suspenso</Link></li>
                             
     
                         </ul>
                     
                     </li>
                     <li><Link to="/contactos" ><span><i className="icon"><FontAwesomeIcon className="faPhone" icon={faPhone}></FontAwesomeIcon></i></span>Contactos</Link></li>
-                    <li><Link  to="/body/productos" ><span><i className="icon"></i></span>Productos</Link></li>
+                    <li><Link  to="/body/productos" ><span><i className="icon"></i></span>Productos</Link>
+                    <ul>
+                           
+                            <li><Link to="/body/productos/comida">Comida</Link></li>
+                            <li><Link to="/body/productos/bebida">Bebidas</Link></li>
+               
+    
+                        </ul>
+                    
+                    </li>
                     <li><Link  to="/registro"><span><i className="icon"></i></span>Registro</Link></li>
     
             </ul> 

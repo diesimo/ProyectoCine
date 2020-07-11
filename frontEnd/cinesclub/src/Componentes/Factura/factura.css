@@ -1,11 +1,11 @@
-.FacturaB{
+.Factura{
 position: absolute;
 background: white;
 z-index:10;
 top:100px;
 left: 30px;
 color:black;
-padding: 30px;
+padding: 20px;
 }
 
 .botomOpen{
@@ -14,3 +14,38 @@ padding: 30px;
     
 
 }
+
+.FacturaEs{
+border-collapse: collapse;
+margin: 25px;
+min-width: 400px;
+
+
+}
+
+.FacturaEs thead tr{
+
+background-color: #720505;
+color:white;
+text-align:left;
+font-weight: bold;
+
+}
+
+.FacturaEs th,
+.FacturaEs td{
+
+    padding:12px 15px ;
+    
+    }
+
+.FacturaEs tbody tr{
+
+        border-bottom: 1px solid grey;
+        
+        }
+ .FacturaEs tbody tr:nth-of-type(even){
+
+background-color: #f3f3f3 ;
+            
+            }

@@ -125,7 +125,7 @@ class Detallado(models.Model):
 class Factura(models.Model):
     idfactura = models.AutoField(primary_key=True)
     fecha = models.DateField('Fecha')
-    monttotal = models.IntegerField('Monto total')
+    monttotal = models.FloatField('Monto total')
     tipoinstru = models.CharField('Tipo de Instrumento',max_length=20)
     idcliente = models.ForeignKey('Usuario', models.DO_NOTHING, db_column='idcliente')
     def __str__(self):
@@ -172,7 +172,7 @@ class Producto(models.Model):
     idprove = models.ForeignKey('Provedor', models.DO_NOTHING, db_column='idprove')
     vista=models.BooleanField('Vista')
     def __str__(self):
-        return (self.nombrepro )
+        return str(self.nombrepro )
     class Meta:
         managed = False
         db_table = 'producto'

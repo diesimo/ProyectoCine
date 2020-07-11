@@ -7,6 +7,7 @@ import AdmiP from './VistaPeliculas.js'
 import RegisF from './RegisFun.js'
 import RegisP from './IngresarProductos.js'
 import Prove from './Provedor.js'
+import GananciaMes from './GagananciaMes.js'
 
 class Admi extends Component {
 
@@ -28,6 +29,7 @@ return(
             <Route exact path="/admi/RegisF" component={RegisF}></Route>
             <Route exact path="/admi/RegisP" component={RegisP}></Route>
             <Route exact path="/admi/Prove" component={Prove}></Route>
+            <Route exact path="/admi/GananciaMes" component={GananciaMes}></Route>
 
         </div>
   

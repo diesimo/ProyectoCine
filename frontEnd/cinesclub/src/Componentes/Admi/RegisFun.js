@@ -86,7 +86,7 @@ class regisfun extends Component{
             idpelicula:this.state.idpelicula,
         };
         console.log(Data)
-         const res = await Axios.post("http://127.0.0.1:8000/funcio/", Data)
+         const res = await Axios.post("http://127.0.0.1:8000/funcion/", Data)
          
         
     }

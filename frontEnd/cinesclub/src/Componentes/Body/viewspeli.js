@@ -109,11 +109,11 @@ class viewspelis extends Component
             
           
         { 
-            this.state.peliculas.map(pelicula =>
+            this.state.peliculas.map((pelicula,index) =>
             
               
-                <div className="info-total">
-                <div className="info">
+                <div className="info-total" key={index}>
+                <div className="info" >
                     <p><span className="negrilla ">Titulo: </span> {pelicula.titulo}</p>
                     
                     <p><span className="negrilla ">Duracion: </span> {pelicula.horas}:{pelicula.minutos}</p>

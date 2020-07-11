@@ -1,0 +1,29 @@
+.Prod{
+ float: left;
+ margin:20px
+}
+
+.Prod button{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #720505;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.Prod button:hover{
+
+
+    color: #720505;
+    background-color: #ffffff;
+}
+
+.Prod img{
+
+width: 300px;
+height: 300px;
+
+}

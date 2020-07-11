@@ -51,6 +51,14 @@ class FacturaSerializer(serializers.ModelSerializer):
     class Meta:
         model=Factura
         fields='__all__'
+class FacturaBoletoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Facturaboleto
+        fields='__all__'
+class DetalladoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Detallado
+        fields='__all__'
 
 class CustomMultipleChoiceField(fields.MultipleChoiceField):
     def to_representation(self, value):

@@ -4,7 +4,7 @@ import Nav from "./Nav.js";
 import { Route } from "react-router-dom";
 import Viewspelis from "./viewspeli.js";
 import Registro from "../Registro/registro.js";
-import Prodructo from "../Productos/productos.js"
+import Produc from '../Produ/Productos.js'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faFilm, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -32,6 +32,23 @@ class Main extends Component {
             render={() => (
               <Viewspelis get="http://127.0.0.1:8000/Comedia/"></Viewspelis>
             )}
+            
+          ></Route>
+          <Route
+            exact
+            path="/body/viewspelis/suspenso"
+            render={() => (
+              <Viewspelis get="http://127.0.0.1:8000/Suspenso/"></Viewspelis>
+            )}
+            
+          ></Route>
+          <Route
+            exact
+            path="/body/viewspelis/romantica"
+            render={() => (
+              <Viewspelis get="http://127.0.0.1:8000/Romantica/"></Viewspelis>
+            )}
+            
           ></Route>
           <Route
             exact
@@ -71,7 +88,28 @@ class Main extends Component {
           <Route exact path="/registro" component={Registro}></Route>
           <Route exact path="/contactos" ></Route>{" "}
       
-          <Route exact path="/body/productos" component={Prodructo}></Route>
+          <Route
+            exact
+            path="/body/productos/"
+            render={() => (
+              <Produc get="http://127.0.0.1:8000/producto/"></Produc>
+            )}
+          ></Route>
+          <Route
+            exact
+            path="/body/productos/comida"
+            render={() => (
+              <Produc get="http://127.0.0.1:8000/ComidaView/"></Produc>
+            )}
+          ></Route>
+          <Route
+            exact
+            path="/body/productos/bebida"
+            render={() => (
+              <Produc get="http://127.0.0.1:8000/BebidaView/"></Produc>
+            )}
+          ></Route>
+          
         
         </div>
         
